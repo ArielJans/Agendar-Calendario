@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Source Sans Pro',Helvetica,Arial,sans-serif;
+}
+
+/*--COMINZO NAV SUPERIOR----------------------------------*/
+
+/*
+header{
+    background-color: #75a2ec;
+    height: 7vh;
+}
+
+nav{
+    display: flex;
+}
+nav ul{
+    display: flex;
+    list-style:none; 
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 9px 25px;
+}
+
+nav ul li{
+    padding: 5px 10px;
+}
+
+nav ul li span{
+    margin-left: 10px;
+    font-family: 'Source Sans Pro',Helvetica,Arial,sans-serif;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(243, 241, 241);
+}
+*/
+/*--FIN NAV SUPERIOR----------------------------------*/
+
+
+/*--COMINZO CUSTOM NAV SUPERIOR----------------------------------*/
+.bg-primary{
+    background-color: #75a2ec!important;
+}
+.nav-link{
+    color: #ffffff!important;
+}
+.navbar-nav :hover{
+    color: #ffffffa9!important;
+}
+/*--FIN CUSTOM NAV SUPERIOR----------------------------------*/
+
+
+
+/*--COMINZO LOGO/NOMBRE EMPRESA----------------------------------*/
+/*
+.logo{
+    padding: 8px 25px;
+    text-decoration: none!important;
+    text-align: center;
+    background-color: #75a2ec;
+    color: white;
+}
+
+.logo :hover{
+    color: white!important;
+}
+
+h1{
+    font-size: 1.8rem!important;
+    font-weight: 700; 
+    line-height: 1.6;
+}
+*/
+/*--FIN LOGO/NOMBRE EMPRESA----------------------------------*/
+
+/*--COMINZO DASHBOAR----------------------------------*/
+main{
+    display: flex;
+}
+
+.row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/*--COMINZO NAV IZQUIERDO----------------------------------*/
+.sidebar{
+    background-color: #323233;
+    width: 20%;
+}
+
+.sidebar ul{
+    padding-left: 0;
+}
+
+.sidebar ul li{
+    list-style:none;
+    padding-bottom: 25px;
+    margin-left: 19%;
+}
+
+.sidebar ul li a{
+    color: #c7c5c5;
+    text-decoration: none;
+}
+
+.sidebar ul li a span{
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .sidebar {
+    display: none;
+  }
+}
+
+.header-sidebar {
+    color: #cac7c4;
+    margin-bottom: 40px;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #444848;
+    padding: 12px 9px!important;
+}
+.col-md-2{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+/*--FIN NAV IZQUIERDO----------------------------------*/
+
+/*--COMIENZO CUSTOM CALENDAR GENERAL----------------------------------*/
+.calendar{
+    background-color: #ecf0f5;
+    width: 100%;
+    display: flex;
+}
+
+/*--CUSTOM CALENDAR----------------------------------*/
+.box-calendar{
+    border-radius: 3px;
+    background: #ffffff;
+    border-top: 3px solid #d2d6de;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin: 10px;
+    width: 100%;
+}
+
+h2{
+    font-weight: normal;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-transform: capitalize;
+}
+
+.fc {
+    padding-top: 15px;
+    padding: 0.5rem;
+    
+}
+/*--FIN CUSTOM CALENDAR----------------------------------*/
+
+/*--COMIENZO CUSTOM MODAL AGREGAR EVENTOS----------------------------------*/
+.customH{
+    margin-bottom: 1rem!important;
+}
+.customR{
+    margin-bottom: 0px;
+}
+/*--FIN CUSTOM MODAL AGREGAR EVENTOS----------------------------------*/
+
+/*--COMINZO RESPONSIVE NAV FULLCALENDAR----------------------------------*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .fc-today-button{
+    position: absolute!important;
+    margin-left: -9px!important;
+  }
+  .fc-toolbar h2{
+    position: absolute!important;
+    margin-left: -90px!important;
+    margin-bottom: 90px!important;
+  }
+
+  .calendar {
+    height: 90vh!important;
+}
+.fc-view, .fc-view > table {
+    height: 70vh!important;
+}
+.fc-time-grid-container{
+    height: 55vh!important;
+}
+.fc-scroller{
+    height: 58vh!important;
+}
+}
+
+/*--FIN RESPONSIVE NAV FULLCALENDAR----------------------------------*/
+

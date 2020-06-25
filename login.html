@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AgendAr Login</title>
+    <link rel="stylesheet" href="./css/style-login.css">
+    <script src="https://kit.fontawesome.com/414006261c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <article class="for">
+            <form action="/api/login" method="POST">
+                <a href="index.html"><i class="fas fa-user-md icon-user"></i></a>
+                <h3>AgendAr</h3>
+                <h2>Iniciar sesión</h2>
+                <div class="error-cesion">
+                    <p class="p-error">Hubo un problema con tu inicio de sesión.</p>
+                </div>
+                    <label for="email"></label>
+                    <input class="imput1" type="email" id="email" name ="email" placeholder="Email" value="">
+                    <label for="pass"></label>
+                    <input class="imput3" type="password" id="pass" name="pass" placeholder="Contraseña" value="" >
+                <button type="submit">Entrar</button>
+                <div class="check-tex">
+                    <input type="checkbox" name="iluminacion" value="ma">Recordarme
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+            </form>
+        </article>
+        <article>
+            <hr>
+            <p>¿Todavia no estas registrado? <a href="register.html"> Registrarme</a> </p>
+        </article>
+    </section>
+</body>
+</html>
