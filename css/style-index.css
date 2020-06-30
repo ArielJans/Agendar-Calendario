@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 /* 1_ navegador con secciones, logo y nombre de emprea*/
-/* 2_ imagen de fondo en cabecera*/
+/* 2_ imagen/gradient cabecera*/
 /* 3_ call-action*/
 /* 4_ Footer*/
 /* CREADO POR JANS ARIEL */
@@ -11,86 +14,91 @@ body{
 
 /* 1_ navegador con secciones, logo y nombre de emprea*/
 .nav{
-    width: 98%;
+    width: 100%;
     position: fixed;
-    height: 55px;
     padding: 0 15px;
-    background-color:rgba(225, 239, 239, 0.77);
+    background-color:rgb(225, 239, 239);
     z-index: 1;
 }
 
-.nav-item{
-    font-family: 'Roboto', sans-serif;
-    color: #2f2d2d;
+.nav-link{
+    font-family: 'Roboto', sans-serif!important;
+    color: #2f2d2d!important;
     font-size: 15px;
-    float: right;
     text-decoration: none;
     margin: 19px 16px ;
 }
 
-.nav-item:hover {
-    color: #26687ef0;
+.nav-link:hover {
+    color: #26687ef0!important;
 }
 
 .img-guest{
     height: 34px;
     float: left;
-    margin: 9px 15px 0px 15px;
+    margin: 0px 15px 0px 15px;
 }
 
 .brand{
-    color: #75a2ec;
+    color: #75a2ec!important;
     font-size: 2.5em;
     font-family: 'Righteous', cursive;
     margin: 0;
-    text-decoration: none; 
+    text-decoration: none!important; 
 }
-
 /* FIN 1 */
 
-/* 2_ imagen de fondo en cabecera*/
-.img-background{
-    max-width: 100%;
-    height: 650px;
-    background: url(../img/img1.jpg) no-repeat fixed center center;
+/* 2_ imagen/gradient cabecera */
+.hero-container{
+    background-image: url(../img/img1.jpg);
+    height: 90vh;
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
 }
-/* FIN 2*/ 
+.bac-gradient{
+    background: linear-gradient(45deg, rgba(90, 84, 140, 0.7), rgba(110, 206, 189, 0.56) 100%);
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    overflow: hidden;
+}
+/* FIN 2*/
 
 /* 3_ Call Action */
-.sec-call{
-    position: absolute;
+.tit-callAction{
+    margin-top: 23%;
+    font-family: 'Righteous', cursive;
 }
-.tex-callActio{
+.tex-callAction{
     color: #fff;
-    margin: 1em;
     font-family: 'Roboto', sans-serif;
-    font-size: 2em;
+    font-size: 2rem;
+}
+.text-cta{
+    margin-bottom: 20px;
 }
 /* FIN 3 */
 
 /* 4_Footer*/
-
 .footer-section{
     background: #0088B2;
-    margin: 0;
-    padding: 0px 35px;
 }
 
-.container-footer{
-   display: inline-flex;
-   width: 100%;
+.col1{
+    padding-top: 2.2%;
+    padding-left: 3%; 
+}
+.col2{
+    padding-left: 8%;
+}
+.col3{
+    padding-left: 8%;
 }
 
-.col-1{
-    width: 35%;
-}
-
-.col-2{
-    margin-left: 10%;
-}
-
-.col-3{
-   margin-left: 26%;
+.footer-img{
+    width: 40px;
+    margin-right: 7px;
 }
 
 .ftco-footer-social{
@@ -109,9 +117,9 @@ body{
 
 .footer-titulos{
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
     color: #fff;
-    display: grid;
     padding: 35px 0px 0px;
 }
 
@@ -125,34 +133,33 @@ body{
 
 }
 
-.footer-img{
-    width: 40px;
-    margin: 0 10px;
-}
 .btn-footer{
     border-radius: 5px;
     margin: 10px 0px;
     background: #4267b2;
     color: #fff;
     font-size: 1.3em;
-    padding: 5% 15%;
+    padding: 2% 10%;
     font-weight: bold;
     border: none;
     cursor: pointer;
-    float: right;
     transition: 0.5s;
 }
 
 .btn-footer:hover{
-    background: #281e80f0;
-    box-shadow: 0 4px 8px 0 rgba(123, 124, 187, 0.2), 0 6px 20px 0 rgba(34, 33, 33, 0.726);
+    background: #4267b2a1;
+    box-shadow: 10px 10px 19px -16px rgba(43,43,46,1);
     transition: 0.5s;
 }
 
 .item-footer2{
     font-family: 'PT Sans', sans-serif;
-    text-decoration: none;
+    text-decoration: none!important;
     color: #141312d7;
+}
+
+.item-footer2 :hover{
+    color: #75a2ec;
 }
 
 .list-unstyled{
@@ -162,4 +169,8 @@ body{
     line-height: 25px;
 }
 
+.row {
+    margin-right: 0px; 
+    margin-left: 0px; 
+}
 /* FIN 4*/

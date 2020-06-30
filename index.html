@@ -7,38 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AgendAr</title>
-    <link href="https://fonts.googleapis.com/css?family=Righteous|Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/414006261c.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!-- style -->
     <link rel="stylesheet" href="css/style-index.css">
 </head>
 
 <body>
-    <section class="img-background" alt="Imagen AgendAr">
-        <header class="banners">
-            <nav class="nav">
-                <a href="mailto:arjapro@gmail.com" class="nav-item">CONTACTO</a>
-                <a href="register.html" class="nav-item">REGISTRARME</a>
-                <a href="login.html" class="nav-item">INICIAR SESIÓN</a>
-                <a href="dashboard.html" class="nav-item">dashboard</a>
-                <a href="#"><img src="./img/agendar.png" class="img-guest" alt="Logo Agendar"></a>
-                <a class="brand" href="#">AgendAr</a>
-            </nav>
-        </header>
-    </section>
+    <header class="banners">
+        <nav class="navbar navbar-expand-md navbar-light justify-content-between nav">
+            <a href="#"><img src="./img/agendar.png" class="img-guest" alt="Logo Agendar"></a>
+            <a class="brand" href="./index.html">AgendAr</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">INICIAR SESIÓN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">REGISTRARME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:arjapro@gmail.com">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="hero-container">
+            <div class="bac-gradient">
+                <h1 class="animate__animated animate__flipInX tit-callAction">AgendAr</h1>
+                <h2 class="text-cta"><span class="tex-callAction" id="rotating">Tu agenda online, tu trabajo organanizado</span></h2>
+                <div class="actions">
+                    <a href="login.html" type="button" class="btn btn-primary">Iniciar</a>
+                    <a href="register.html" type="button" class="btn btn-info">Registrarme</a>
+                </div>
+            </div>
+        </section>
 
-    <!-- SECCION CALL ACTION -->
-    <!--<img src="img/img1.jpg" class="img-background" alt="Imagen AgendAr">
-    <section class="sec-call">
-        <h1 class="tex-callActio">Tu vida organizada</h1>
-        <input type="submit" value="Facebook" class="btn-footer">
-    </section> -->
-    <!--FIN SECCION CALL ACTION -->
+    </header>
 
     <!--FOOTER -->
     <footer class="footer-section">
-        <div class="container-footer">
-            <div class="col-1">
+        <div class="row">
+            <div class="col-md-4 col1">
                 <h2 class="brand2"><img src="./img/agendar.png" class="footer-img" alt="Logo Guest"> AgendAr</h2>
                 <p class="item-footer2"> Copyright &copy;
                     <script>document.write(new Date().getFullYear());</script> | Todos los derechos reservados</p>
@@ -52,7 +72,7 @@
                                 class="fab fa-twitter-square icon-social"></span></a></li>
                 </ul>
             </div>
-            <div class="col-2">
+            <div class="col-md-4 col2 ">
                 <h2 class="footer-titulos">Servicios</h2>
                 <ul class="list-unstyled">
                     <li><a href="login.html" class="item-footer2">Iniciar Sesión</a></li>
@@ -60,7 +80,7 @@
                     <li><a href="mailto:arjapro@gmail.com" class="item-footer2">Contacto</a></li>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-md-4 col3 ">
                 <h2 class="footer-titulos">Síguenos en Facebook</h2>
                 <form action="https://www.facebook.com/" class="subscribe-form" target="_blank">
                     <div class="form-group">
@@ -71,6 +91,10 @@
         </div>
     </footer>
     <!--FIN FOOTER -->
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
