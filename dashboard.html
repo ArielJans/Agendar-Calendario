@@ -42,7 +42,7 @@
             </div>
         </nav>
 
-        <!--
+        <!--  NV ANTERIOR. VER SI TOMO O ELIINO ESTILOS EN CSS
         <nav col-md-12>
             <a href="./index.html" id="logo">
                 <h1>AGENDAR</h1>
@@ -70,92 +70,92 @@
         </section>
 
         <section class="calendar col-md-10">
-
             <article class="box-calendar">
                 <!-- THE CALENDAR -->
                 <div id="calendar"></div>
             </article>
         </section>
     </main>
-<div class="modal fade" id="modalEventos" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="tituloEvento">Agregar Evento</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+    <!--//////////////////////////// MODAL /////////////////////////////-->
+    <div class="modal fade" id="modalEventos" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloEvento">Agregar Evento</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="#" id="guardar">
+                    <div class="modal-body">
+                        <div class="form-group row" id="elTitulo">
+                            <label for="titulo" class="col-sm-2 col-form-label">Titulo</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="titulo">
+                            </div>
+                        </div>
+                        <!-- /// AGREGA DESCRIPCION AL MODAL/FORM ///
+                        <div class="form-group row">
+                            <label for="descripcion" class="col-sm-2 col-form-label">Descripción</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="descripcion" rows="2"></textarea>
+                            </div>
+                        </div>
+                        -->
+                        <div class="form-group row">
+                            <label for="fecha" class="col-sm-2 col-form-label">Fecha</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="fecha">
+                            </div>
+                        </div>
+                        <div class="form-group customR row">
+                            <label for="hora" class="col-sm-2 col-form-label">Horario</label>
+
+                            <div class="input-group customH col-sm-5">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Inicio</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Todo el día" id="horaInicio"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group customH col-sm-5">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Fin</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="hh:mm" id="horaFin"
+                                    aria-describedby="basic-addon1">
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <label for="color" class="col-sm-2 col-form-label">Color</label>
+                            <div class="col-sm-3">
+                                <input type="color" class="form-control" id="color" value="#3788d8">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" id="btnAgregar">Agregar</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    </div>
+                </form>
             </div>
-            <form action="#" id="guardar">
-                <div class="modal-body">
-                    <div class="form-group row" id="elTitulo">
-                        <label for="titulo" class="col-sm-2 col-form-label">Titulo</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="titulo">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="descripcion" class="col-sm-2 col-form-label">Descripción</label>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" id="descripcion" rows="2"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="fecha" class="col-sm-2 col-form-label">Fecha</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="fecha">
-                        </div>
-                    </div>
-                    <div class="form-group customR row">
-                        <label for="hora" class="col-sm-2 col-form-label">Horario</label>
-
-                        <div class="input-group customH col-sm-5">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">Inicio</span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Todo el día" id="horaInicio" aria-describedby="basic-addon1">
-                        </div>
-                        <div class="input-group customH col-sm-5">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">Fin</span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="hh:mm" id="horaFin" aria-describedby="basic-addon1">
-                        </div>
-
-                    </div>
-                    <div class="form-group row">
-                        <label for="color" class="col-sm-2 col-form-label">Color</label>
-                        <div class="col-sm-3">
-                            <input type="color" class="form-control" id="color" value="#3788d8">
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary" id="btnAgregar">Agregar</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                </div>
-            </form>
         </div>
     </div>
-</div>
+    <!--//////////////////////////// FIN MODAL /////////////////////////////-->
 
-<!--////////////////////////////////////////////////////////////-->
-
-
-
-<!-- Bootstrap -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<!-- fullCalendar -->
-<script src='./plugins/fullcalendar/packages/core/main.js'></script>
-<script src='./plugins/fullcalendar/packages/daygrid/main.js'></script>
-<script src="./plugins/fullcalendar/packages/timegrid/main.js"></script>
-<script src="./plugins/fullcalendar/packages/interaction/main.js"></script>
-<script src='./plugins/fullcalendar/es.js'></script>
-<script src='./js/appFc.js'></script>
-
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- fullCalendar -->
+    <script src='./plugins/fullcalendar/packages/core/main.js'></script>
+    <script src='./plugins/fullcalendar/packages/daygrid/main.js'></script>
+    <script src="./plugins/fullcalendar/packages/timegrid/main.js"></script>
+    <script src="./plugins/fullcalendar/packages/interaction/main.js"></script>
+    <script src='./plugins/fullcalendar/es.js'></script>
+    <script src='./js/appFc.js'></script>
 </body>
 </html>
