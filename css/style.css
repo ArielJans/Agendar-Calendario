@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 *{
     margin: 0;
@@ -9,41 +10,10 @@ body{
 }
 
 /*--COMINZO NAV SUPERIOR----------------------------------*/
-
-/*
-header{
-    background-color: #75a2ec;
-    height: 7vh;
+.navbar-brand{
+    font-family: 'Righteous', cursive;
 }
-
-nav{
-    display: flex;
-}
-nav ul{
-    display: flex;
-    list-style:none; 
-    width: 100%;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 9px 25px;
-}
-
-nav ul li{
-    padding: 5px 10px;
-}
-
-nav ul li span{
-    margin-left: 10px;
-    font-family: 'Source Sans Pro',Helvetica,Arial,sans-serif;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: rgb(243, 241, 241);
-}
-*/
 /*--FIN NAV SUPERIOR----------------------------------*/
-
 
 /*--COMINZO CUSTOM NAV SUPERIOR----------------------------------*/
 .bg-primary{
@@ -57,28 +27,12 @@ nav ul li a{
 }
 /*--FIN CUSTOM NAV SUPERIOR----------------------------------*/
 
-
-
 /*--COMINZO LOGO/NOMBRE EMPRESA----------------------------------*/
-/*
-.logo{
-    padding: 8px 25px;
-    text-decoration: none!important;
-    text-align: center;
-    background-color: #75a2ec;
-    color: white;
+.img-guest{
+    height: 34px;
+    float: left;
+    margin: 0px 15px 0px 15px;
 }
-
-.logo :hover{
-    color: white!important;
-}
-
-h1{
-    font-size: 1.8rem!important;
-    font-weight: 700; 
-    line-height: 1.6;
-}
-*/
 /*--FIN LOGO/NOMBRE EMPRESA----------------------------------*/
 
 /*--COMINZO DASHBOAR----------------------------------*/
@@ -186,21 +140,30 @@ h2{
   }
   .fc-toolbar h2{
     position: absolute!important;
-    margin-left: -90px!important;
-    margin-bottom: 90px!important;
+    padding-left: 30px;
+    font-size: 1.4em!important;
+    margin: -63px!important;
   }
+
+  .fc-toolbar.fc-header-toolbar {
+    margin-top: 3em;
+}
+  .fc-today-button{
+    margin-left: -93px!important;
+    margin-top: -47px!important;
+}
 
   .calendar {
     height: 90vh!important;
 }
 .fc-view, .fc-view > table {
-    height: 70vh!important;
+    height: 67vh!important;
 }
 .fc-time-grid-container{
     height: 55vh!important;
 }
 .fc-scroller{
-    height: 58vh!important;
+    height: 50vh!important;
 }
 }
 
