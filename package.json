@@ -1,0 +1,35 @@
+{
+  "name": "calendar",
+  "version": "1.0.0",
+  "description": "Maquetado y diseño web (en desarrollo) utilizando HTML5, CSS, Bootstrap y JavaScript. Se planea completar utilizando Node.js , MongoDB y Heroku como server. Se aplicó el plugin FullCalendar\r Agendar online: https://arieljans.github.io/Agendar-Calendario/",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArielJans/Agendar-Calendario.git"
+  },
+  "keywords": [],
+  "author": "Ariel Jans",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArielJans/Agendar-Calendario/issues"
+  },
+  "homepage": "https://github.com/ArielJans/Agendar-Calendario#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "express-session": "^1.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.9.20",
+    "node-fetch": "^2.6.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  }
+}
