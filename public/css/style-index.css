@@ -76,7 +76,8 @@ body{
     font-size: 2rem;
 }
 .text-cta{
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 /* FIN 3 */
 
@@ -173,4 +174,26 @@ body{
     margin-right: 0px; 
     margin-left: 0px; 
 }
+
+/*-- comienzo responsive footer--*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.tit-callAction {
+    margin-top: 55%;
+}
+.col1 {
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.col2 {
+    padding-left: 15px;
+}
+.col3 {
+    padding-left: 15px;
+}
+.footer-titulos {
+    padding: 5px 0px 0px;
+}
+}
+/*--Fin responsive footer--*/
 /* FIN 4*/
