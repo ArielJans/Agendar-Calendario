@@ -24,7 +24,7 @@ MongoClient.connect(url, async function (err, client) {
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json()) 
 
-app.use(express.static('../public'))
+app.use(express.static('./public'))
 
 ////////// Agregar usuarios ////////////
 app.post('/api/usuarios', async function (req, res) {
