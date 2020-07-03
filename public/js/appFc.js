@@ -52,21 +52,24 @@ let calendar = new FullCalendar.Calendar(calendarEl, {
     });
     //Cierra el modal
     $('#modalEventos').modal('toggle'); 
-    }
 
-  //////////////// saque de primer proyecto//  CAPTURA DE EVENTOS /////////////////////
-  var titulo = jsEvent.helper[0].textContent
-  var fecha = date._d.getTime()
+    //////////////// saque de primer proyecto//  CAPTURA DE EVENTOS /////////////////////
+    /*
+    let titulo = jsEvent.helper[0].textContent
+    let fecha = date._d.getTime()
 
-  fetch('/api/eventos', {  /// el fetch es el envio a la bd de las var titulo y fecha recogidas arriba
-    method: 'POST',
-    headers: {
-      'content-type': 'application/json'
-    },
-    body: JSON.stringify({
-      titulo: titulo,
-      fecha: fecha
+    fetch('/api/eventos', {  /// el fetch es el envio a la bd de las var titulo y fecha recogidas arriba
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        titulo: titulo,
+        fecha: fecha
+      })
     })
-  })
+    */
         //////////////// FIN CAPTURA DE EVENTOS /////////////////////
+    
+    }
 });

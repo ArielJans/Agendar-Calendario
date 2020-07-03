@@ -8,7 +8,7 @@ var puerto = process.env.PORT || 3000
 // Connection URL
 var url = 'mongodb+srv://arieljans:agermanj@cluster0-b8qob.mongodb.net/test?retryWrites=true&w=majority';
 var db;
-var dbName = "agendarCalendario";
+var dbName = "agendar";
 
 // Use connect method to connect to the server
 MongoClient.connect(url, async function (err, client) {
@@ -22,9 +22,9 @@ MongoClient.connect(url, async function (err, client) {
 })
 
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json()) /// *
+app.use(bodyParser.json()) 
 
-app.use(express.static('./recursos-estaticos'))
+app.use(express.static('./public'))
 
 ////////// Agregar usuarios ////////////
 app.post('/api/usuarios', async function (req, res) {
