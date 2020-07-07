@@ -42,7 +42,7 @@ app.post('/api/eventos', async function (req, res) {
         titulo: req.body.titulo,
         fecha: req.body.fecha
     })
-    res.status(201).send('evento cerado correctamente')
+    res.status(201).send('evento creado correctamente')
 })
 
 /////// PEDIDOS DE EVENTOS A BD ////////
