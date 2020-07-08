@@ -68,6 +68,21 @@ let calendar = new FullCalendar.Calendar(calendarEl, {
         fecha: fecha
       })
     })
+
+    ///////////////// provar con estos cambios ///////////////////////
+    fetch('/api/eventos', {  /// el fetch es el envio a la bd de las var titulo y fecha recogidas arriba
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        title: titulo,
+        start: fecha + horaInicio,
+        end: fecha + "T" + horaFin, // '2020-06-20T12:30:00'
+        color: color
+      })
+    })
+    ///////////////// fin provar con estos cambios ///////////////////////
     */
         //////////////// FIN CAPTURA DE EVENTOS /////////////////////
     
