@@ -1,14 +1,14 @@
-var express = require('express');
-var bodyParser = require('body-parser')
-var MongoClient = require("mongodb").MongoClient;
+const express = require('express');
+const bodyParser = require('body-parser')
+const MongoClient = require("mongodb").MongoClient;
 
-var app = express()
-var puerto = process.env.PORT || 3000
+const app = express()
+const puerto = process.env.PORT || 3000
 
 // Connection URL
-var url = 'mongodb+srv://arieljans:agermanj@cluster0-b8qob.mongodb.net/test?retryWrites=true&w=majority';
-var db;
-var dbName = "agendar";
+const url = 'mongodb+srv://arieljans:agermanj@cluster0-b8qob.mongodb.net/test?retryWrites=true&w=majority';
+const db;
+const dbName = "agendar";
 
 // Use connect method to connect to the server
 MongoClient.connect(url, async function (err, client) {
