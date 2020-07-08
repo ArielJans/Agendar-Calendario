@@ -48,26 +48,28 @@ let calendar = new FullCalendar.Calendar(calendarEl, {
       title: titulo, 
       start: fecha + horaInicio,  
       end: fecha + "T" + horaFin, // '2020-06-20T12:30:00'
-      color: color
+      color: color,
     });
     //Cierra el modal
     $('#modalEventos').modal('toggle'); 
 
-      
-    //////////////// CAPTURA Y ENVIO A BD DE EVENTOS //  saque de primer proyecto /////////////////////
+    //////////////// saque de primer proyecto//  CAPTURA DE EVENTOS /////////////////////
+    /*
+    let titulo = jsEvent.helper[0].textContent
+    let fecha = date._d.getTime()
+
     fetch('/api/eventos', {  /// el fetch es el envio a la bd de las var titulo y fecha recogidas arriba
       method: 'POST',
       headers: {
         'content-type': 'application/json'
       },
       body: JSON.stringify({
-        title: titulo,
-        start: fecha + horaInicio,
-        end: fecha + "T" + horaFin, // '2020-06-20T12:30:00'
-        color: color
+        titulo: titulo,
+        fecha: fecha
       })
     })
-        //////////////// FIN CAPTURA Y ENVIO A BD DE EVENTOS /////////////////////
+    */
+        //////////////// FIN CAPTURA DE EVENTOS /////////////////////
     
     }
 });
