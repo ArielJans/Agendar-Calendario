@@ -53,7 +53,7 @@ let calendar = new FullCalendar.Calendar(calendarEl, {
     //Cierra el modal
     $('#modalEventos').modal('toggle'); 
 
-      /*
+      
     //////////////// CAPTURA Y ENVIO A BD DE EVENTOS //  saque de primer proyecto /////////////////////
     fetch('/api/eventos', {  /// el fetch es el envio a la bd de las var titulo y fecha recogidas arriba
       method: 'POST',
@@ -68,6 +68,6 @@ let calendar = new FullCalendar.Calendar(calendarEl, {
       })
     })
         //////////////// FIN CAPTURA Y ENVIO A BD DE EVENTOS /////////////////////
-    */
+    
     }
 });
